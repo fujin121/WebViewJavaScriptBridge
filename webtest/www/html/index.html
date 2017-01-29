@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width" />
+        
+        
+    </head>
+    <script type="text/javascript" charset="utf-8">
+        
+        
+        
+    function test(result) {
+      alert(result.name);
+    }
+    
+    function test1(){
+        var obj = new Object();
+        obj.name = "fujin"
+        obj.password = "123456";
+        mobile.send("test1",obj,function(result){
+                    alert(result.name);
+        });
+
+    }
+    
+    </script>
+    
+    <body>
+        <fieldset>
+            <legend>js调用原生代码，并自动回调</legend>
+            <button type="button" onclick="test1();">点我</button>
+        </fieldset>
+    </body>
+</html>
