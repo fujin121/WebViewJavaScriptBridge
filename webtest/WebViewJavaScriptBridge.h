@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <WebKit/WebKit.h>
+
 
 
 @protocol WebViewJavaScriptBridgeDelegate <NSObject>
@@ -35,6 +35,8 @@
 -(nonnull instancetype)initWithWebViewFrame:(CGRect)rect;
 
 -(void)loadHtmlWithURL:(nonnull NSString*)url;
+
+-(void)loadRemoteURL:(nonnull NSString*)url;
 
 
 -(void)registWithMethodName:(nonnull NSString*)methodName;

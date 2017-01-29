@@ -26,8 +26,12 @@
     _bridge.bridgeDelegate = self;
     _bridge.methodDeletage = self;//js调用原生函数的所属类
     [self.view addSubview:_bridge.webView];
-    [_bridge loadHtmlWithURL:@"html/index.html"];
+    NSString *baseURL = [NSString stringWithFormat:@"%@/www/%@",[NSBundle mainBundle].bundlePath,@"html/index.html"];
+    [_bridge loadHtmlWithURL:baseURL];
     [_bridge registWithMethodName:@"test1"];//js掉原生代码要先注册
+    
+    //NSString *remoteURL = @"https://www.baidu.com";
+    //[_bridge loadRemoteURL:remoteURL];
  
 }
 

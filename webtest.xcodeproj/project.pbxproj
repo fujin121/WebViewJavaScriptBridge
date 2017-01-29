@@ -9,12 +9,11 @@
 /* Begin PBXBuildFile section */
 		7764B9C31E3B5EAE00309AF9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7764B9C21E3B5EAE00309AF9 /* main.m */; };
 		7764B9C61E3B5EAE00309AF9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7764B9C51E3B5EAE00309AF9 /* AppDelegate.m */; };
-		7764B9CC1E3B5EAE00309AF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7764B9CA1E3B5EAE00309AF9 /* Main.storyboard */; };
 		7764B9CE1E3B5EAE00309AF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7764B9CD1E3B5EAE00309AF9 /* Assets.xcassets */; };
 		7764B9D11E3B5EAE00309AF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7764B9CF1E3B5EAE00309AF9 /* LaunchScreen.storyboard */; };
 		7764B9DC1E3B6AD700309AF9 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 7764B9DB1E3B6AD700309AF9 /* www */; };
 		7764B9DF1E3B763100309AF9 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7764B9DE1E3B763100309AF9 /* WebViewController.m */; };
-		7764B9E31E3CC03A00309AF9 /* wjsbridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7764B9E21E3CC03A00309AF9 /* wjsbridge.a */; };
+		7764B9E91E3E2FB800309AF9 /* WebViewJavaScriptBridge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7764B9E81E3E2FB800309AF9 /* WebViewJavaScriptBridge.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +21,6 @@
 		7764B9C21E3B5EAE00309AF9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7764B9C41E3B5EAE00309AF9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7764B9C51E3B5EAE00309AF9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7764B9CB1E3B5EAE00309AF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7764B9CD1E3B5EAE00309AF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7764B9D01E3B5EAE00309AF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7764B9D21E3B5EAE00309AF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -30,7 +28,7 @@
 		7764B9DB1E3B6AD700309AF9 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		7764B9DD1E3B763100309AF9 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		7764B9DE1E3B763100309AF9 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
-		7764B9E21E3CC03A00309AF9 /* wjsbridge.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = wjsbridge.a; sourceTree = "<group>"; };
+		7764B9E81E3E2FB800309AF9 /* WebViewJavaScriptBridge.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = WebViewJavaScriptBridge.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7764B9E31E3CC03A00309AF9 /* wjsbridge.a in Frameworks */,
+				7764B9E91E3E2FB800309AF9 /* WebViewJavaScriptBridge.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,8 +68,7 @@
 				7764B9DD1E3B763100309AF9 /* WebViewController.h */,
 				7764B9DE1E3B763100309AF9 /* WebViewController.m */,
 				7764B9D81E3B69F400309AF9 /* WebViewJavaScriptBridge.h */,
-				7764B9E21E3CC03A00309AF9 /* wjsbridge.a */,
-				7764B9CA1E3B5EAE00309AF9 /* Main.storyboard */,
+				7764B9E81E3E2FB800309AF9 /* WebViewJavaScriptBridge.a */,
 				7764B9CD1E3B5EAE00309AF9 /* Assets.xcassets */,
 				7764B9CF1E3B5EAE00309AF9 /* LaunchScreen.storyboard */,
 				7764B9D21E3B5EAE00309AF9 /* Info.plist */,
@@ -148,7 +145,6 @@
 				7764B9DC1E3B6AD700309AF9 /* www in Resources */,
 				7764B9D11E3B5EAE00309AF9 /* LaunchScreen.storyboard in Resources */,
 				7764B9CE1E3B5EAE00309AF9 /* Assets.xcassets in Resources */,
-				7764B9CC1E3B5EAE00309AF9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,14 +164,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7764B9CA1E3B5EAE00309AF9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7764B9CB1E3B5EAE00309AF9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7764B9CF1E3B5EAE00309AF9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -318,6 +306,7 @@
 				7764B9D71E3B5EAE00309AF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
