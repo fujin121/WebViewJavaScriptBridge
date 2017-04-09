@@ -15,9 +15,13 @@
 2. js掉原生方法，需要注册当前html页面所要调用的原生方法名：
 
 `NSString *baseURL = [NSString stringWithFormat:@"%@/www/%@",[NSBundle mainBundle].bundlePath,@"html/index.html"];`
+
 `[_bridge loadHtmlWithURL:baseURL];//显示本地html页面`
+
 `//NSString *remoteURL = @"";`
+
 `//[_bridge loadRemoteURL:remoteURL]; //显示远程html页面`
+
 `[_bridge registWithMethodName:@"test1"];//js掉原生代码要先注册`
 
 3. js调用方法 API:
