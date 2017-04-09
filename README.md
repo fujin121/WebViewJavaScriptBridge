@@ -7,7 +7,9 @@
 1. 初始化bridge对象：
 
 _bridge = [[WebViewJavaScriptBridge alloc] initWithWebViewFrame:rect];
+
 _bridge.bridgeDelegate = self;
+
 _bridge.methodDeletage = self;//js调用原生函数的所属类
 
 2. js掉原生方法，需要注册当前html页面所要调用的原生方法名：
